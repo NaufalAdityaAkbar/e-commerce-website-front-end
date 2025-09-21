@@ -29,53 +29,41 @@ export default function Home() {
       </section>
 
       {/* Categories Section */}
-      <section className="min-h-screen relative flex items-center justify-center py-16">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <div 
-            className="w-full h-full bg-cover bg-center" 
-            style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')",
-              filter: "brightness(0.3) blur(1px)"
-            }}
-          ></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-blue-900/70 to-indigo-900/70 mix-blend-multiply"></div>
-        </div>
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-4xl font-bold text-center mb-12 text-white">Kategori Populer</h2>
+      <section className="min-h-screen bg-gradient-to-b from-blue-50 to-indigo-100 flex items-center justify-center py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8 text-blue-700">Kategori Populer</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="bg-gradient-to-br from-white/10 to-blue-500/10 backdrop-blur-sm p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-blue-300/30">
+            <div className="bg-gradient-to-br from-white to-blue-50 p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-blue-100">
               <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
                 <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-white text-lg">Elektronik</h3>
+              <h3 className="font-bold text-blue-800 text-lg">Elektronik</h3>
             </div>
-            <div className="bg-gradient-to-br from-white/10 to-blue-500/10 backdrop-blur-sm p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-blue-300/30">
+            <div className="bg-gradient-to-br from-white to-blue-50 p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-blue-100">
               <div className="w-20 h-20 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
                 <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                 </svg>
               </div>
-              <h3 className="font-bold text-white text-lg">Fashion</h3>
+              <h3 className="font-bold text-indigo-800 text-lg">Fashion</h3>
             </div>
-            <div className="bg-gradient-to-br from-white/10 to-blue-500/10 backdrop-blur-sm p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-blue-300/30">
+            <div className="bg-gradient-to-br from-white to-blue-50 p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-blue-100">
               <div className="w-20 h-20 bg-blue-700 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
                 <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
               </div>
-              <h3 className="font-bold text-white text-lg">Peralatan Rumah</h3>
+              <h3 className="font-bold text-blue-800 text-lg">Peralatan Rumah</h3>
             </div>
-            <div className="bg-gradient-to-br from-white/10 to-blue-500/10 backdrop-blur-sm p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-blue-300/30">
+            <div className="bg-gradient-to-br from-white to-blue-50 p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-blue-100">
               <div className="w-20 h-20 bg-indigo-700 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
                 <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-white text-lg">Aksesoris</h3>
+              <h3 className="font-bold text-indigo-800 text-lg">Aksesoris</h3>
             </div>
           </div>
         </div>
